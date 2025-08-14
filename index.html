@@ -717,19 +717,41 @@
     </div>
 </section>
 
-<!-- Resume Viewer -->
-<section id="resume-section" style="padding: 2rem 0; background: #f9f9f9;">
-    <div class="container">
-        <h2 class="section-title">My Resume</h2>
-        <div style="overflow: hidden; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+<section id="resume-section" style="padding: 3rem 0; background: #f4f4f9;">
+    <div class="container" style="max-width: 1000px; margin: 0 auto;">
+        <h2 class="section-title" style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: #333;">My Resume</h2>
+        
+        <div style="overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 1.5rem;">
             <iframe 
                 src="https://anushrut.com.np/assets/Anushrut_Ghimire_CV.pdf"
                 style="width: 100%; height: 80vh; border: none;"
                 title="Anushrut Ghimire Resume">
             </iframe>
         </div>
+
+        <div style="text-align: center;">
+            <a 
+                href="https://anushrut.com.np/assets/Anushrut_Ghimire_CV.pdf" 
+                target="_blank" 
+                download
+                style="display: inline-block; padding: 0.8rem 1.5rem; background-color: #4a90e2; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 500; transition: background 0.3s;">
+                Download CV
+            </a>
+        </div>
     </div>
+
+    <style>
+        @media (max-width: 768px) {
+            iframe {
+                height: 60vh;
+            }
+        }
+        a:hover {
+            background-color: #357ABD;
+        }
+    </style>
 </section>
+
 
 <script>
 function showResume() {
@@ -838,6 +860,7 @@ function showResume() {
     </script>
 </body>
 </html>
+
 
 
 
