@@ -694,6 +694,15 @@
         </div>
     </section>
 
+<style>
+    html {
+        scroll-behavior: smooth; /* smooth scrolling for anchor links */
+    }
+    #resume-section {
+        display: none; /* hidden until View CV is clicked */
+    }
+</style>
+
 <!-- Contact -->
 <section class="contact" id="contact">
     <div class="container">
@@ -703,7 +712,7 @@
         </p>
         <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
             <a href="mailto:anushrut256@gmail.com" class="contact-button">Contact Me</a>
-            <a href="#resume-section" class="contact-button">View CV</a>
+            <a href="#resume-section" onclick="showResume()" class="contact-button">View CV</a>
         </div>
     </div>
 </section>
@@ -719,13 +728,15 @@
                 title="Anushrut Ghimire Resume">
             </iframe>
         </div>
-        <p style="text-align: center; margin-top: 1rem;">
-            <a href="https://anushrut.com.np/assets/Anushrut_Ghimire_CV.pdf" download class="contact-button">
-                Download CV
-            </a>
-        </p>
     </div>
 </section>
+
+<script>
+function showResume() {
+    document.getElementById("resume-section").style.display = "block";
+}
+</script>
+
 
 <!-- Footer -->
 
@@ -827,6 +838,7 @@
     </script>
 </body>
 </html>
+
 
 
 
