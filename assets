@@ -1,0 +1,19 @@
+import os
+import shutil
+
+# Step 1: Original file path
+old_path = r"C:\Users\MeChingee\Downloads\Anushrut_Ghimire_CV (1).pdf"
+
+# Step 2: Rename file
+new_path = r"C:\Users\MeChingee\Downloads\Anushrut_Ghimire_CV.pdf"
+os.rename(old_path, new_path)
+print("File renamed successfully!")
+
+# Step 3: Move file to Portfolio folder
+destination = r"C:\Users\MeChingee\Documents\Portfolio\Anushrut_Ghimire_CV.pdf"
+shutil.move(new_path, destination)
+print("File moved successfully!")
+
+# Step 4: Open file with default PDF reader
+os.startfile(destination)
+print("File opened successfully!")
